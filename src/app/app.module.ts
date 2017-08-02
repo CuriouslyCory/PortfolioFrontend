@@ -1,7 +1,6 @@
+// Core angular2 components
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import {CommonModule} from '@angular/common';
 
 // angular material components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,11 +26,11 @@ import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SkillsComponent } from './skills/skills.component';
 
 import {
   CovalentLayoutModule,
   CovalentMenuModule,
-  CovalentNotificationsModule,
   CovalentStepsModule
 } from '@covalent/core';
 
@@ -41,6 +40,8 @@ import { CovalentHttpModule } from '@covalent/http';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +49,9 @@ import { AppComponent } from './app.component';
     HomeComponent,
     ExperienceComponent,
     PortfolioComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SkillsComponent,
+    HobbiesComponent
   ],
   imports: [
     AppRoutingModule,
@@ -56,17 +59,19 @@ import { AppComponent } from './app.component';
     BrowserAnimationsModule,
     CovalentLayoutModule,
     CovalentMenuModule,
-    CovalentNotificationsModule,
     CovalentStepsModule,
-    MdButtonModule,
+    CovalentHttpModule,
     MdCardModule,
-    MdIconModule,
-    MdInputModule,
-    MdListModule,
     MdMenuModule,
-    MdToolbarModule,
-    MdSidenavModule,
+    MdInputModule,
+    MdButtonModule,
     MdGridListModule,
+    MdListModule,
+    MdIconModule,
+    MdSidenavModule,
+    MdToolbarModule,
+    MdTooltipModule,
+    MdDialogModule,
     MdTabsModule
   ],
   providers: [],

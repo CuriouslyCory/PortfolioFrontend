@@ -1,4 +1,4 @@
-<td-layout>
+<td-layout #layout>
 	<td-navigation-drawer flex sidenavTitle="Welcome" logo="assets:teradata">
 		<md-nav-list>
 			<ng-template let-item let-last="last" ngFor [ngForOf]="navElements">
@@ -8,9 +8,9 @@
 			</ng-template>
 		</md-nav-list>
 	</td-navigation-drawer>
-	<td-layout-nav logo="assets:teradata" toolbarTitle="Covalent" navigationRoute="/">
+	<td-layout-nav logo="assets:teradata" toolbarTitle="{{pageTitle}}" navigationRoute="/">
 	<button md-icon-button td-menu-button tdLayoutToggle>
-	<md-icon>menu</md-icon>
+		<md-icon>menu</md-icon>
 	</button>
 	<router-outlet></router-outlet>
 	</td-layout-nav>
