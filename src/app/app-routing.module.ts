@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CodePhilosophyComponent } from './code-philosophy/code-philosophy.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
   { path: 'skills', component:  SkillsComponent },
   { path: 'hobbies', component: HobbiesComponent },
+  { path: 'code-philosophy', component: CodePhilosophyComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

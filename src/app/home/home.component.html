@@ -1,39 +1,65 @@
-<md-card>
-	<md-card-header>
-		<md-icon md-card-avatar>assessment</md-icon>
-		<md-card-title>My Professional Experience</md-card-title>
-	</md-card-header>
-	<md-card-content>
-		<p>I've been a full stack LAMP developer since 2005. In that time I have worked on teams, lead teams, and worked as the sole developer.</p>
-	</md-card-content>
-	<md-card-actions>
-		<button md-button routerLink="/experience">See My Work History</button>
-		<button md-button routerLink="/skills">View My Skills List</button>
-	</md-card-actions>
-</md-card>
-
-<md-card>
-	<md-card-header>
-		<md-icon md-card-avatar>assessment</md-icon>
-		<md-card-title>Project Portfolio</md-card-title>
-	</md-card-header>
-	<md-card-content>
-		<p></p>
-	</md-card-content>
-	<md-card-actions>
-		<button md-button routerLink="/experience">Picture My Portfolio</button>
-	</md-card-actions>
-</md-card>
-
-<md-card>
-	<md-card-header>
-		<md-icon md-card-avatar>assessment</md-icon>
-		<md-card-title>What I Do For Fun</md-card-title>
-	</md-card-header>
-	<md-card-content>
-		<p></p>
-	</md-card-content>
-	<md-card-actions>
-		<button md-button routerLink="/experience">Check Out My Hobbies</button>
-	</md-card-actions>
-</md-card>
+<div layout="column" class="md-content" class="inset" flex>
+	<div layout-gt-xs="row">
+		<md-card flex>
+			<md-card-header>
+				<div md-card-avatar class="my-avatar"></div>
+				<md-card-title>My Career</md-card-title>
+				<md-card-subtitle>Over a decade of experience</md-card-subtitle>
+			</md-card-header>
+			<img md-card-image src="assets/CodeSS.png">
+			<md-card-content>
+				<p>I've been a full stack LAMP developer since 2005. In that time I have worked on teams, lead teams, and worked as the sole developer.</p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button routerLink="/experience">See My Work History</button>
+				<button md-button routerLink="/skills">View My Skills List</button>
+			</md-card-actions>
+		</md-card>
+		
+		<md-card flex>
+			<md-card-header>
+				<div md-card-avatar class="portfolio-avatar"></div>
+				<md-card-title>Project Portfolio</md-card-title>
+				<md-card-subtitle>Projects I'm particularly proud of</md-card-subtitle>
+			</md-card-header>
+			<img md-card-image src="assets/PortfolioCombo.png">
+			<md-card-content>
+				<p>Some highlights from the last decade. Come take a peek at some of my work.</p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button routerLink="/portfolio">Picture My Portfolio</button>
+			</md-card-actions>
+		</md-card>
+	</div>
+	<div layout-gt-xs="row">
+		<md-card flex>
+			<md-card-header>
+				<div md-card-avatar class="hobbies-avatar"></div>
+				<md-card-title>What I Do For Fun</md-card-title>
+				<md-card-subtitle>I have a life outside of work(?)</md-card-subtitle>
+			</md-card-header>
+			<img md-card-image src="assets/HobbiesCombo.jpg">
+			<md-card-content>
+				<p></p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button routerLink="/hobbies">Check Out My Hobbies</button>
+			</md-card-actions>
+		</md-card>
+		
+		<md-card flex>
+			<md-card-header>
+				<div md-card-avatar class="hobbies-avatar"></div>
+				<md-card-title>My Programming Philosophies</md-card-title>
+				<md-card-subtitle>As a simple list of directives</md-card-subtitle>
+			</md-card-header>
+			<img md-card-image src="assets/Philosophy.jpg">
+			<md-card-content>
+				<p></p>
+			</md-card-content>
+			<md-card-actions>
+				<button md-button routerLink="/code-philosophy">Listen to me Philosophize</button>
+			</md-card-actions>
+		</md-card>
+	</div>
+</div>

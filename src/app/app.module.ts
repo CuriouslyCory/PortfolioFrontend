@@ -27,6 +27,8 @@ import { ExperienceComponent } from './experience/experience.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SkillsComponent } from './skills/skills.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { CodePhilosophyComponent } from './code-philosophy/code-philosophy.component';
 
 import {
   CovalentLayoutModule,
@@ -40,8 +42,6 @@ import { CovalentHttpModule } from '@covalent/http';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
-import { HobbiesComponent } from './hobbies/hobbies.component';
-
 
 @NgModule({
   declarations: [
@@ -51,7 +51,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     PortfolioComponent,
     NotFoundComponent,
     SkillsComponent,
-    HobbiesComponent
+    HobbiesComponent,
+    CodePhilosophyComponent
   ],
   imports: [
     AppRoutingModule,

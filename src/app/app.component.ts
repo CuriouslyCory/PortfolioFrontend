@@ -5,6 +5,7 @@ const NAVELEMENTS = [
   { name: 'Home', icon: 'home', route: '/home' },
   { name: 'Experience', icon: 'assessment', route: '/experience' },
   { name: 'Portfolio', icon: 'settings', route: '/portfolio' },
+  { name: 'Code Philosophy', icon: 'settings', route: '/code-philosophy' },
   { name: 'Skills', icon: 'settings', route: '/skills' },
   { name: 'Hobbies', icon: 'settings', route: '/hobbies' }
 ];
