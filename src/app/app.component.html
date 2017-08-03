@@ -8,8 +8,17 @@
 			</ng-template>
 		</md-nav-list>
 	</td-navigation-drawer>
-	<td-layout-nav toolbarTitle="Cory Sougstad - {{pageTitle}}" navigationRoute="/">
-		<button md-icon-button td-menu-button tdLayoutToggle>
+	<td-layout-nav toolbarTitle="Cory Sougstad" navigationRoute="/home">
+		<md-toolbar class="pad-none">
+			<nav md-stretch-tabs md-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
+				<ng-template let-item let-last="last" ngFor [ngForOf]="navElements">
+					<a md-tab-link routerLink="{{item.route}}" routerLinkActive="active">
+						<md-icon hide-gt-xs>{{item.icon}}</md-icon><span hide-xs>{{item.name}}</span>
+					</a>
+				</ng-template>
+			</nav>
+		</md-toolbar>
+		<button md-icon-button td-menu-button tdLayoutToggle hide-gt-xs>
 			<md-icon>menu</md-icon>
 		</button>
 		<router-outlet></router-outlet>

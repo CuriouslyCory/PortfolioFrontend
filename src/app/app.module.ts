@@ -14,10 +14,10 @@ import {
   MdListModule,
   MdIconModule,
   MdSidenavModule,
+  MdTabsModule,
   MdToolbarModule,
   MdTooltipModule,
-  MdDialogModule,
-  MdTabsModule
+  MdDialogModule
 } from '@angular/material';
 
 // import routing
@@ -70,10 +70,10 @@ import { AppComponent } from './app.component';
     MdListModule,
     MdIconModule,
     MdSidenavModule,
+    MdTabsModule,
     MdToolbarModule,
     MdTooltipModule,
-    MdDialogModule,
-    MdTabsModule
+    MdDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

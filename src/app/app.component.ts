@@ -3,11 +3,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 const NAVELEMENTS = [
   { name: 'Home', icon: 'home', route: '/home' },
-  { name: 'Experience', icon: 'assessment', route: '/experience' },
-  { name: 'Portfolio', icon: 'settings', route: '/portfolio' },
-  { name: 'Code Philosophy', icon: 'settings', route: '/code-philosophy' },
-  { name: 'Skills', icon: 'settings', route: '/skills' },
-  { name: 'Hobbies', icon: 'settings', route: '/hobbies' }
+  { name: 'Experience', icon: 'work', route: '/experience' },
+  { name: 'Portfolio', icon: 'perm_media', route: '/portfolio' },
+  { name: 'Code Philosophy', icon: 'visibility', route: '/code-philosophy' },
+  { name: 'Skills', icon: 'build', route: '/skills' },
+  { name: 'Hobbies', icon: 'landscape', route: '/hobbies' }
 ];
 
 @Component({
