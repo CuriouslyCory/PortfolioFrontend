@@ -36,6 +36,8 @@ const SKILLS = [
   {
     category: 'Web Servers',
     skills: [
+      { name: 'AWS CloudFront, EC2' },
+      { name: 'Azure App Deployment' },
       { name: 'Apache 2' },
       { name: 'NGINX' },
       { name: 'Meteor' },
@@ -51,7 +53,7 @@ const SKILLS = [
 })
 export class SkillsComponent implements OnInit {
 
-  skillsList = SKILLS;
+  skillsList   = SKILLS;
 
   constructor() { }
 
