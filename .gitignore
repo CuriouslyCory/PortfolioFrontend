@@ -5,3 +5,4 @@ src/app/**/*.map
 node_modules
 .project
 dist
+package-lock.json
