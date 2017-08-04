@@ -22,7 +22,9 @@ export class AppComponent {
 
   constructor( private router: Router, private activatedRoute: ActivatedRoute ) {
     router.events.subscribe( ( url: any ) => {
-      this.pageTitle = this.navElements.filter( ( element: any ) => element.route === url.url )[0].name;
+      if (url.url !== '/') {
+        this.pageTitle = this.navElements.filter( ( element: any ) => element.route === url.url )[0].name;
+      }
     });
   }
 }

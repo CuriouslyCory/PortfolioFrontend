@@ -20,16 +20,7 @@ import {
   MdDialogModule
 } from '@angular/material';
 
-// import routing
-import { AppRoutingModule } from './app-routing.module';
-import { HomeComponent } from './home/home.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { SkillsComponent } from './skills/skills.component';
-import { HobbiesComponent } from './hobbies/hobbies.component';
-import { CodePhilosophyComponent } from './code-philosophy/code-philosophy.component';
-
+// import covalent
 import {
   CovalentLayoutModule,
   CovalentMenuModule,
@@ -41,6 +32,17 @@ import { CovalentHttpModule } from '@covalent/http';
 // hammer js is required by some angular components
 import 'hammerjs';
 
+// import internal modules and components
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { SkillsComponent } from './skills/skills.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
+import { CodePhilosophyComponent } from './code-philosophy/code-philosophy.component';
+
+// import main app component
 import { AppComponent } from './app.component';
 
 @NgModule({
