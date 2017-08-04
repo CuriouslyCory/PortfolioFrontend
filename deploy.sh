@@ -117,5 +117,13 @@ if [ -e "$DEPLOYMENT_TARGET/package.json" ]; then
   cd - > /dev/null
 fi
 
+# 4. Build ng app
+if [ -e "$DEPLOYMENT_TARGET/.angular-cli.json" ]; then  
+  cd "$DEPLOYMENT_TARGET"
+  eval ./node_modules/.bin/ng build --prod
+  exitWithMessageOnError "Angular build failed"
+  cd - > /dev/null
+fi 
+
 ##################################################################################################################################
 echo "Finished successfully."
