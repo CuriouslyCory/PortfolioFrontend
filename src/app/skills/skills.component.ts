@@ -19,19 +19,20 @@ const SKILLS = [
       { name: 'CodeIgniter 3' },
       { name: 'AngularJS' },
       { name: 'Angular (2)' },
-      { name: 'jQuery' }
+      { name: 'jQuery' },
+      { name: 'Tensorflow' }
     ]
   },
   {
     category: 'Web Servers',
     skills: [
-      { name: 'Apache 2' },
+      { name: 'Apache Web Server' },
       { name: 'NGINX' },
       { name: 'ExpressJS' }
     ]
   },
   {
-    category: 'Environments',
+    category: 'Host Environments',
     skills: [
       { name: 'AWS CloudFront, EC2' },
       { name: 'Azure App Deployment' },
@@ -42,8 +43,9 @@ const SKILLS = [
     ]
   },
   {
-    category: 'Concepts',
+    category: 'Important Concepts',
     skills: [
+      { name: 'Continuious Integration' },
       { name: 'OOP' },
       { name: 'Machine Learning' },
       { name: 'Deep Learning' },
