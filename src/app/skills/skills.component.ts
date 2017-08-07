@@ -27,8 +27,8 @@ const SKILLS = [
     skills: [
       { name: 'Apache 2' },
       { name: 'NGINX' },
-      { name: 'Meteor' },
-      { name: 'ExpressJS' },
+      { name: 'Microsoft Server' },
+      { name: 'Ubuntu' },
       { name: 'Centos' },
       { name: 'RHEL' }
     ]
