@@ -23,25 +23,33 @@ const SKILLS = [
     ]
   },
   {
-    category: 'Server Technology',
+    category: 'Web Servers',
     skills: [
       { name: 'Apache 2' },
       { name: 'NGINX' },
-      { name: 'Microsoft Server' },
-      { name: 'Ubuntu' },
-      { name: 'Centos' },
-      { name: 'RHEL' }
+      { name: 'ExpressJS' }
     ]
   },
   {
-    category: 'Web Servers',
+    category: 'Environments',
     skills: [
       { name: 'AWS CloudFront, EC2' },
       { name: 'Azure App Deployment' },
-      { name: 'Apache 2' },
-      { name: 'NGINX' },
-      { name: 'Meteor' },
-      { name: 'ExpressJS' }
+      { name: 'Centos' },
+      { name: 'RHEL' },
+      { name: 'Ubuntu' },
+      { name: 'Fedora' }
+    ]
+  },
+  {
+    category: 'Concepts',
+    skills: [
+      { name: 'OOP' },
+      { name: 'Machine Learning' },
+      { name: 'Deep Learning' },
+      { name: 'Query Optomization' },
+      { name: 'Data Architecture' },
+      { name: 'ORM' }
     ]
   },
 ];
