@@ -1,15 +1,92 @@
-// Avatars for the various cards
-.my-avatar {
-  background-image: url('../../assets/MyFace0.jpg');
-  background-size: cover;
+#intro-chunk {
+	background-image: url('../../assets/CodeSS.png');
+	width: 100%;
+	padding-bottom: 40%;
+	min-height: 400px;
+	background-size: cover;
+	position: relative;
+	
+	.intro-avatar {
+		background-image: url('../../assets/MyFace0.jpg');
+		height: 150px;
+		width: 150px;
+		background-size: cover;
+		border-radius: 75px;
+		border: 1px solid #fff;
+	}
+	
+	h2 {
+		text-align: center;
+	}
 }
 
-.portfolio-avatar {
-  background-image: url('../../assets/UltimateProspector1-thumb.png');
-  background-size: cover;
+#portfolio-wrapper {
+	background-color: #FFF;
+	padding: 0 0 20px 0;
+	
+	.screenshots {
+		
+		img {
+			height: auto;
+			width: 90%;
+			max-width: 600px;
+			padding: 10px;
+			cursor: pointer;
+		}
+	}
 }
 
-.hobbies-avatar {
-  background-image: url('../../assets/Camping.jpg');
-  background-size: cover;
+#work-experience-hobbies-wrapper {
+	background-color:  #AAAAAA;
+	min-height: 300px;
+}
+
+#work-experience-wrapper {
+	background-image: url('../../assets/CodeSS.png');
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	min-height: 300px
+}
+
+#hobbies-wrapper {
+	background-image: url('../../assets/HobbiesCombo.jpg');
+	width: 100%;
+	background-size: cover;
+	position: relative;
+	min-height: 300px
+}
+
+
+
+#philosophies-wrapper {
+	background-color: #FFF;
+	padding: 0 0 20px 0;
+}
+
+#contact-me-wrapper {
+	padding: 0 0 20px 0;
+	
+	md-icon {
+		font-size: 2em;
+		margin: 0 10px 5px 0;
+	}
+	h3 { 
+		margin: 5px 0 0 0;
+	}
+}
+
+#footer-wrapper {
+	background-color: #03a9f4;
+	color: #FFF;
+	padding: 5px;
+}
+
+.contents-block {
+    background-color: rgba(200, 200, 200, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

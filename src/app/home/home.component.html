@@ -1,65 +1,61 @@
-<div layout="column" class="md-content" class="inset" flex >
-	<div layout-gt-xs="row" layout-align="center start">
-		<md-card flex>
-			<md-card-header>
-				<div md-card-avatar class="my-avatar"></div>
-				<md-card-title>My Career</md-card-title>
-				<md-card-subtitle>Over a decade of experience</md-card-subtitle>
-			</md-card-header>
-			<img md-card-image src="assets/CodeSS.png">
-			<md-card-content>
-				<p>I've been a full stack LAMP developer since 2005. In that time I have worked on teams, lead teams, and worked as the sole developer.</p>
-			</md-card-content>
-			<md-card-actions>
-				<button md-button routerLink="/experience">See My Work History</button>
-				<button md-button routerLink="/skills">View My Skills List</button>
-			</md-card-actions>
-		</md-card>
-		
-		<md-card flex>
-			<md-card-header>
-				<div md-card-avatar class="portfolio-avatar"></div>
-				<md-card-title>Project Portfolio</md-card-title>
-				<md-card-subtitle>Projects I'm particularly proud of</md-card-subtitle>
-			</md-card-header>
-			<img md-card-image src="assets/PortfolioCombo.png">
-			<md-card-content>
-				<p>Some highlights from the last decade. Come take a peek at some of my work.</p>
-			</md-card-content>
-			<md-card-actions>
-				<button md-button routerLink="/portfolio">Picture My Portfolio</button>
-			</md-card-actions>
-		</md-card>
+<section id="intro-chunk" layout="column">
+	<div class="contents-block" layout="column" layout-align="space-between center" flex>
+		<h1>&lt; Web App Engineer &gt;</h1>
+		<div class="intro-avatar"></div>
+		<h2>Profesional Web Development Since 2005</h2>
 	</div>
-	<div layout-gt-xs="row" layout-align="center start">
-		<md-card flex>
-			<md-card-header>
-				<div md-card-avatar class="hobbies-avatar"></div>
-				<md-card-title>What I Do For Fun</md-card-title>
-				<md-card-subtitle>I have a life outside of work(?)</md-card-subtitle>
-			</md-card-header>
-			<img md-card-image src="assets/HobbiesCombo.jpg">
-			<md-card-content>
-				<p>Build, cook, design, create, brew, experiment, make. Hike, camp, backpack, fish, get outside.</p>
-			</md-card-content>
-			<md-card-actions>
-				<button md-button routerLink="/hobbies">Check Out My Hobbies</button>
-			</md-card-actions>
-		</md-card>
-		
-		<md-card flex>
-			<md-card-header>
-				<div md-card-avatar class="hobbies-avatar"></div>
-				<md-card-title>My Programming Philosophies</md-card-title>
-				<md-card-subtitle>As a simple list of directives</md-card-subtitle>
-			</md-card-header>
-			<img md-card-image src="assets/Philosophy.jpg">
-			<md-card-content>
-				<p>Each function written is a lesson to be learned.</p>
-			</md-card-content>
-			<md-card-actions>
-				<button md-button routerLink="/code-philosophy">Listen to me Philosophize</button>
-			</md-card-actions>
-		</md-card>
+</section>
+
+<section id="portfolio-wrapper" layout="column" layout-align="space-between center" flex>
+	<h1>&lt; Portfolio &gt;</h1>
+	<h3>Here are some project highlights.</h3>
+	<div class="screenshots" layout="column" layout-align="center center" flex>
+		<div *ngFor="let project of projects" layout="column" layout-align="center center" flex>
+			<span>{{project.name}}</span>
+			<img src="assets/{{project.image}}" routerLink="/portfolio" flex>
+		</div>
 	</div>
-</div>
+	<button md-raised-button routerLink="/portfolio">Picture My Portfolio</button>
+</section>
+
+<section id="work-experience-hobbies-wrapper" layout="row" layout-xs="column">
+	<section id="work-experience-wrapper">
+		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
+			<h1>&lt; Work History &gt;</h1>
+			<h3>
+				I've been a full stack LAMP developer since 2005. In that time I have worked on teams, 
+				lead teams, and worked as the sole developer.
+			</h3>
+			<button md-raised-button routerLink="/experience">See My Work History</button>
+		</div>
+	</section>
+	
+	<section id="hobbies-wrapper">
+		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
+			<h1>&lt; Hobbies &gt;</h1>
+			<h3>Build, cook, design, create, brew, experiment, make. Hike, camp, backpack, fish, get outside.</h3>
+			<button md-raised-button routerLink="/hobbies">Check Out My Hobbies</button>
+		</div>
+	</section>
+</section>
+
+<section id="philosophies-wrapper" layout="column" layout-align="space-around center" flex>
+	<h1>&lt; Coding Philosophy &gt;</h1>
+	<h3>Each function written is a lesson to be learned.</h3>
+	<button md-raised-button routerLink="/hobbies">Listent To Me Philosophize</button>
+</section>
+
+<section id="contact-me-wrapper" layout="column" layout-align="space-around center" flex>
+	<h1>&lt; Contact Me &gt;</h1>
+	<div layout=row>
+		<md-icon>contact_mail</md-icon>
+		<h3>Email me for more information on rates and availability.</h3>
+	</div>
+	<a href="mailto:cory@hau.me">
+		<button md-raised-button>Email Me!</button>
+	</a>
+</section>
+
+<section id="footer-wrapper">
+	<span>Copyright 2017 Cory Sougstad</span>
+</section>

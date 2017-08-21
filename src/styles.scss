@@ -14,3 +14,11 @@ $theme: mat-light-theme($primary, $accent, $warn);
 md-card {
 	max-width: 600px;
 }
+
+app-root {
+	color: #575757;
+	
+	h1 {
+		font-size: 2em;
+	}
+}
