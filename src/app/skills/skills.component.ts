@@ -25,6 +25,24 @@ const SKILLS = [
     ]
   },
   {
+    category: 'Project Utilities',
+    skills: [
+      { name: 'Grunt' },
+      { name: 'Laravel' },
+      { name: 'Angular CLI' },
+      { name: 'Composer' },
+      { name: 'npm' },
+    ]
+  },
+  {
+    category: 'Unit testing',
+    skills: [
+      { name: 'Karma' },
+      { name: 'Jasmine' },
+      { name: 'PHPUnit' },
+    ]
+  },
+  {
     category: 'Web Servers',
     skills: [
       { name: 'Apache Web Server' },
