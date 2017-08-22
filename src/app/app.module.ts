@@ -42,6 +42,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { CodePhilosophyComponent } from './code-philosophy/code-philosophy.component';
 
+// import services
+import { GoogleAnalyticsEventsService } from './google-analytics-events.service';
+
 // import main app component
 import { AppComponent } from './app.component';
 
@@ -77,7 +80,7 @@ import { AppComponent } from './app.component';
     MdTooltipModule,
     MdDialogModule
   ],
-  providers: [],
+  providers: [GoogleAnalyticsEventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
