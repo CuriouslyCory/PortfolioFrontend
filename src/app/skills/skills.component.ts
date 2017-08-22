@@ -5,12 +5,19 @@ const SKILLS = [
     category: 'Programming Languages',
     skills: [
       { name: 'PHP' },
-      { name: 'SQL' },
       { name: 'HTML5' },
       { name: 'CSS3' },
       { name: 'Javascript' },
       { name: 'ES6/ES2015' },
       { name: 'Python' }
+    ]
+  },
+  {
+    category: 'Databases',
+    skills: [
+      { name: 'MySQL' },
+      { name: 'SQL Server' },
+      { name: 'MongoDB' },
     ]
   },
   {
