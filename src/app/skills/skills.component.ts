@@ -6,7 +6,8 @@ const SKILLS = [
     skills: [
       { name: 'PHP' },
       { name: 'SQL' },
-      { name: 'HTML' },
+      { name: 'HTML5' },
+      { name: 'CSS3' },
       { name: 'Javascript' },
       { name: 'Python' }
     ]

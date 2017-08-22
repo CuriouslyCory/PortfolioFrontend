@@ -1,12 +1,10 @@
 <div class="inset">
-	<md-card flex>
+	<md-card *ngFor="let category of skillsList" flex>
 		<md-list>
-			<div *ngFor="let category of skillsList">
-				<h3 md-subheader>{{category.category}}</h3>
-				<md-list-item *ngFor="let skill of category.skills">
-					{{skill.name}}
-				</md-list-item>
-			</div>
+			<h3 md-subheader>{{category.category}}</h3>
+			<md-list-item *ngFor="let skill of category.skills">
+				{{skill.name}}
+			</md-list-item>
 		</md-list>
 	</md-card>
 </div>
