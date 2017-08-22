@@ -9,6 +9,7 @@ const SKILLS = [
       { name: 'HTML5' },
       { name: 'CSS3' },
       { name: 'Javascript' },
+      { name: 'ES6/ES2015' },
       { name: 'Python' }
     ]
   },
@@ -56,6 +57,16 @@ const SKILLS = [
       { name: 'GIT' },
       { name: 'Subversion' },
       { name: 'CVS' },
+    ]
+  },
+  {
+    category: 'APIs',
+    skills: [
+      { name: 'Facebook' },
+      { name: 'Google' },
+      { name: 'Twitter' },
+      { name: 'Tropo' },
+      { name: 'Twillio' },
     ]
   },
   {
