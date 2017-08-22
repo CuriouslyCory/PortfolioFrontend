@@ -8,7 +8,7 @@
 
 <section id="portfolio-wrapper" layout="column" layout-align="space-between center" flex>
 	<h1>&lt; Portfolio &gt;</h1>
-	<h3>Here are some project highlights.</h3>
+	<h3>Featured Projects</h3>
 	<div class="screenshots" layout="column" layout-align="center center" flex>
 		<div *ngFor="let project of projects" layout="column" layout-align="center center" flex>
 			<span>{{project.name}}</span>
@@ -22,10 +22,13 @@
 	<section id="work-experience-wrapper">
 		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
 			<h1>&lt; Work History &gt;</h1>
-			<h3>
-				I've been a full stack LAMP developer since 2005. In that time I have worked on teams, 
-				lead teams, and worked as the sole developer.
-			</h3>
+			<div layout="row" layout-align="center center">
+				<md-icon>work</md-icon>
+				<h3>
+					I've been a full stack LAMP developer since 2005. In that time I have worked on teams, 
+					lead teams, and worked as the sole developer.
+				</h3>
+			</div>
 			<button md-raised-button routerLink="/experience">See My Work History</button>
 		</div>
 	</section>
@@ -33,7 +36,10 @@
 	<section id="hobbies-wrapper">
 		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
 			<h1>&lt; Hobbies &gt;</h1>
-			<h3>Build, cook, design, create, brew, experiment, make. Hike, camp, backpack, fish, get outside.</h3>
+			<div layout="row" layout-align="center center">
+				<md-icon>nature_people</md-icon>
+				<h3>Build, cook, design, create, brew, experiment, make. Hike, camp, backpack, fish, get outside.</h3>
+			</div>
 			<button md-raised-button routerLink="/hobbies">Check Out My Hobbies</button>
 		</div>
 	</section>
@@ -41,13 +47,16 @@
 
 <section id="philosophies-wrapper" layout="column" layout-align="space-around center" flex>
 	<h1>&lt; Coding Philosophy &gt;</h1>
-	<h3>Each function written is a lesson to be learned.</h3>
-	<button md-raised-button routerLink="/hobbies">Listent To Me Philosophize</button>
+	<div layout="row" layout-align="center center">
+		<md-icon>local_cafe</md-icon>
+		<h3>Each function written is a lesson to be learned.</h3>
+	</div>
+	<button md-raised-button routerLink="/code-philosophy">Listent To Me Philosophize</button>
 </section>
 
 <section id="contact-me-wrapper" layout="column" layout-align="space-around center" flex>
 	<h1>&lt; Contact Me &gt;</h1>
-	<div layout=row>
+	<div layout="row" layout-align="center center">
 		<md-icon>contact_mail</md-icon>
 		<h3>Email me for more information on rates and availability.</h3>
 	</div>
