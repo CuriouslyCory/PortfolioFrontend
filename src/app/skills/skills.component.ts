@@ -90,6 +90,8 @@ const SKILLS = [
   {
     category: 'Important Concepts',
     skills: [
+      { name: 'Service Oriented Architecture' },
+      { name: 'Microservices' },
       { name: 'Continuious Integration' },
       { name: 'OOP' },
       { name: 'Machine Learning' },
