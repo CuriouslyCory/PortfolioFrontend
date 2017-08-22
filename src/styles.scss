@@ -11,14 +11,29 @@ $theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 @include covalent-theme($theme);
 
-md-card {
-	max-width: 600px;
-}
-
 app-root {
 	color: #575757;
 	
 	h1 {
 		font-size: 2em;
 	}
+	
+	#header-wrapper {
+		background-image: url('assets/CodeSS.png');
+		width: 100%;
+		padding-bottom: 20%;
+		min-height: 200px;
+		background-size: cover;
+		position: relative;
+	}
+	
+	.contents-block {
+	    background-color: rgba(200, 200, 200, 0.7);
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
 }
+
