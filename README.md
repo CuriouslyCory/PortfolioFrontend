@@ -1,5 +1,11 @@
 # PortfolioFrontend
 
+## Welcome
+
+This is the public repository for my personal portfolio and resume website. You can view the site [HERE](http://cory.hau.me) or clone it and run it locally using the directions below.
+
+This site was built using Angular.io, Angular Material, and Covalent Layout for framework, components and layout helpers.
+
 ## Installation
 
 Run `npm install`
