@@ -51,6 +51,14 @@ const SKILLS = [
     ]
   },
   {
+    category: 'Version Control',
+    skills: [
+      { name: 'GIT' },
+      { name: 'Subversion' },
+      { name: 'CVS' },
+    ]
+  },
+  {
     category: 'Host Environments',
     skills: [
       { name: 'AWS CloudFront, EC2' },
