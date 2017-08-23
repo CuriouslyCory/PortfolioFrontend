@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { GoogleAnalyticsEventsService } from '../google-analytics-events.service';
 
-declare let ga: Function;
+declare let ga: any;
 
 const SKILLS = [
   {
@@ -116,7 +116,7 @@ export class SkillsComponent implements OnInit {
 
   skillsList   = SKILLS;
 
-  constructor(public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
+  constructor(public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
