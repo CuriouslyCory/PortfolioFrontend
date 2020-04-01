@@ -6,16 +6,16 @@
 		</div>
 	</section>
 	
-	<md-card *ngFor="let category of skillsList" flex>
-		<md-card-content>
+	<mat-card *ngFor="let category of skillsList" flex>
+		<mat-card-content>
 			<h2>{{category.category}}</h2>
-			<md-list>
-				<md-list-item *ngFor="let skill of category.skills">
+			<mat-list>
+				<mat-list-item *ngFor="let skill of category.skills">
 					{{skill.name}}
-				</md-list-item>
-			</md-list>
-		</md-card-content>
-	</md-card>
+				</mat-list-item>
+			</mat-list>
+		</mat-card-content>
+	</mat-card>
 
 
 </div>

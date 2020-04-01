@@ -1,30 +1,30 @@
 <td-layout #layout>
 	<td-navigation-drawer flex sidenavTitle="Welcome">
-		<md-nav-list>
+		<mat-nav-list>
 			<ng-template let-item let-last="last" ngFor [ngForOf]="navElements">
-				<a md-list-item (click)="layout.close()" routerLink="{{item.route}}" routerLinkActive="active">
-					<md-icon>{{item.icon}}</md-icon><span>{{item.name}}</span>
+				<a mat-list-item (click)="layout.close()" routerLink="{{item.route}}" routerLinkActive="active">
+					<mat-icon>{{item.icon}}</mat-icon><span>{{item.name}}</span>
 				</a>
 			</ng-template>
-		</md-nav-list>
+		</mat-nav-list>
 	</td-navigation-drawer>
 	<td-layout-nav toolbarTitle="Cory Sougstad" navigationRoute="/home">
-		<button md-icon-button td-menu-button tdLayoutToggle hide-gt-xs>
-			<md-icon>menu</md-icon>
+		<button mat-icon-button td-menu-button tdLayoutToggle hide-gt-xs>
+			<mat-icon>menu</mat-icon>
 		</button>
 		<div td-toolbar-content layout="row" layout-align="space-between center" flex>	
 			<span flex></span>
 			<a href="https://github.com/HexKrak/PortfolioFrontend" mdTooltip="View this page on Github" ><img class="github-logo" src="../assets/GitHub-Mark-Light-64px.png"></a> 
 		</div>
-		<md-toolbar class="pad-none">
-			<nav md-stretch-tabs md-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
+		<mat-toolbar class="pad-none">
+			<nav mat-stretch-tabs mat-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
 				<ng-template let-item let-last="last" ngFor [ngForOf]="navElements">
-					<a md-tab-link routerLink="{{item.route}}" routerLinkActive="active">
-						<md-icon hide-gt-xs>{{item.icon}}</md-icon><span hide-xs>{{item.name}}</span>
+					<a mat-tab-link routerLink="{{item.route}}" routerLinkActive="active">
+						<mat-icon hide-gt-xs>{{item.icon}}</mat-icon><span hide-xs>{{item.name}}</span>
 					</a>
 				</ng-template>
 			</nav>
-		</md-toolbar>
+		</mat-toolbar>
 		<router-outlet></router-outlet>
 	</td-layout-nav>
 </td-layout>

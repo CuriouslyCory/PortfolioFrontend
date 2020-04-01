@@ -5,27 +5,22 @@ import { NgModule } from '@angular/core';
 // angular material components
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {
-  MdCardModule,
-  MdMenuModule,
-  MdInputModule,
-  MdButtonModule,
-  MdGridListModule,
-  MdListModule,
-  MdIconModule,
-  MdSidenavModule,
-  MdTabsModule,
-  MdToolbarModule,
-  MdTooltipModule,
-  MdDialogModule
-} from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatListModule } from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDialogModule} from '@angular/material/dialog';
 
 // import covalent
-import {
-  CovalentLayoutModule,
-  CovalentMenuModule,
-  CovalentStepsModule
-} from '@covalent/core';
+import { CovalentLayoutModule } from '@covalent/core/layout';
+import { CovalentStepsModule  } from '@covalent/core/steps';
 
 import { CovalentHttpModule } from '@covalent/http';
 
@@ -64,21 +59,20 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     CovalentLayoutModule,
-    CovalentMenuModule,
     CovalentStepsModule,
     CovalentHttpModule,
-    MdCardModule,
-    MdMenuModule,
-    MdInputModule,
-    MdButtonModule,
-    MdGridListModule,
-    MdListModule,
-    MdIconModule,
-    MdSidenavModule,
-    MdTabsModule,
-    MdToolbarModule,
-    MdTooltipModule,
-    MdDialogModule
+    MatCardModule,
+    MatMenuModule,
+    MatInputModule,
+    MatButtonModule,
+    MatGridListModule,
+    MatListModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatDialogModule
   ],
   providers: [GoogleAnalyticsEventsService],
   bootstrap: [AppComponent]
