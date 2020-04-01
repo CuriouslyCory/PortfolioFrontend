@@ -16,8 +16,8 @@
 			<span flex></span>
 			<a href="https://github.com/HexKrak/PortfolioFrontend" mdTooltip="View this page on Github" ><img class="github-logo" src="../assets/GitHub-Mark-Light-64px.png"></a> 
 		</div>
-		<mat-toolbar class="pad-none">
-			<nav mat-stretch-tabs mat-tab-nav-bar class="pull-bottom-xl pull-top-md text-upper" flex>
+		<mat-toolbar>
+			<nav mat-stretch-tabs mat-tab-nav-bar class="text-upper" flex>
 				<ng-template let-item let-last="last" ngFor [ngForOf]="navElements">
 					<a mat-tab-link routerLink="{{item.route}}" routerLinkActive="active">
 						<mat-icon hide-gt-xs>{{item.icon}}</mat-icon><span hide-xs>{{item.name}}</span>
