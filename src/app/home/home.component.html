@@ -5,60 +5,11 @@
 		<h2>Profesional Web Development Since 2005</h2>
 	</div>
 </section>
-
-<section id="portfolio-wrapper" layout="column" layout-align="space-between center" flex>
-	<h1>&lt; Portfolio &gt;</h1>
-	<h3>Mobile Apps, Front-Ends, RESTful APIs and More</h3>
-	<div class="screenshots" layout="column" layout-align="center center" flex>
-		<div *ngFor="let project of projects" layout="column" layout-align="center center" flex>
-			<span>{{project.name}}</span>
-			<img src="assets/{{project.image}}" routerLink="/portfolio" flex>
-		</div>
-	</div>
-	<button mat-raised-button routerLink="/portfolio">Picture My Portfolio</button>
-</section>
-
-<section id="work-experience-hobbies-wrapper" layout="row" layout-xs="column">
-	<section id="work-experience-wrapper">
-		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
-			<h1>&lt; Work History &gt;</h1>
-			<div layout="row" layout-align="center center">
-				<mat-icon>work</mat-icon>
-				<h3>
-					I've been a full stack LAMP developer since 2005. In that time I have worked on teams, 
-					lead teams, and worked as the sole developer.
-				</h3>
-			</div>
-			<button mat-raised-button routerLink="/experience">See My Work History</button>
-		</div>
-	</section>
-	
-	<section id="hobbies-wrapper">
-		<div class="contents-block" layout="column" layout-align="space-around center" flex layout-padding>
-			<h1>&lt; Hobbies &gt;</h1>
-			<div layout="row" layout-align="center center">
-				<mat-icon>nature_people</mat-icon>
-				<h3>Build, cook, design, create, brew, experiment, make. Hike, camp, backpack, fish, get outside.</h3>
-			</div>
-			<button mat-raised-button routerLink="/hobbies">Check Out My Hobbies</button>
-		</div>
-	</section>
-</section>
-
-<section id="philosophies-wrapper" layout="column" layout-align="space-around center" flex>
-	<h1>&lt; Coding Philosophy &gt;</h1>
-	<div layout="row" layout-align="center center">
-		<mat-icon>local_cafe</mat-icon>
-		<h3>Each function written is a lesson to be learned.</h3>
-	</div>
-	<button mat-raised-button routerLink="/code-philosophy">Listen To Me Philosophize</button>
-</section>
-
 <section id="contact-me-wrapper" layout="column" layout-align="space-around center" flex>
 	<h1>&lt; Contact Me &gt;</h1>
 	<div layout="row" layout-align="center center">
 		<mat-icon>contact_mail</mat-icon>
-		<h3>Email me for more information on rates and availability.</h3>
+		<h3>Email me for more information.</h3>
 	</div>
 	<a href="mailto:cory@hau.me">
 		<button mat-raised-button>Email Me!</button>
@@ -66,5 +17,5 @@
 </section>
 
 <section id="footer-wrapper">
-	<span>Copyright 2017 Cory Sougstad</span>
+	<span>Copyright 2020 Cory Sougstad</span>
 </section>
